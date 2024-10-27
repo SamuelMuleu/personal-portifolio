@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Hamburger from "hamburger-react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 import {
     Popover,
@@ -12,7 +12,7 @@ export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full p-10">
+    <header className="w-full p-5">
       <div className="container mx-auto flex md:flex-row justify-between items-center">
         <h1 className="text-2xl mt-4 md:text-3xl md:mt-0 text-white tracking-wider font-mono mb-4 md:mb-0 ">
           Meu Portfólio
@@ -32,27 +32,27 @@ export function Nav() {
           >
             <div className="flex flex-col p-4 gap-4  ">
 
-            <a
-              href=""
+            <Link
+              to="/"
               className="text-gray-500 hover:text-slate-300 "
-              onClick={() => setIsOpen(false)}
+      
             >
               Sobre Mim
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/projects"
               className="text-gray-500 hover:text-slate-300 "
-              onClick={() => setIsOpen(false)}
+      
             >
               Projetos
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/contact"
               className="text-gray-500 hover:text-slate-300 "
-              onClick={() => setIsOpen(false)}
+         
             >
               Contato
-            </a>
+            </Link>
             </div>
           </PopoverContent>
         </Popover>
@@ -63,10 +63,10 @@ export function Nav() {
             isOpen ? "block" : "hidden"
           }` }
         >
-          <Link to="about" className="text-gray-500 hover:text-slate-300 cursor-pointer" >
+          <Link to="/" className="text-gray-500 hover:text-slate-300 cursor-pointer" >
             Sobre Mim
           </Link>
-          <Link to="projects" className="text-gray-500 hover:text-slate-300 cursor-pointer">
+          <Link to="/projects" className="text-gray-500 hover:text-slate-300 cursor-pointer">
             Projetos
           </Link>
           <Link to="about" className="text-gray-500 hover:text-slate-300 cursor-pointer">

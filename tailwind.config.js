@@ -13,7 +13,7 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
-        background: '#0d1027',  // Background principal
+        background: '#000000',  // Background principal
         foreground: '#333333',  // Texto principal
         card: {
           DEFAULT: '#ffffff',  // Cor padrão de card (branca)
@@ -28,7 +28,7 @@ export default {
           foreground: '#ffffff',  // Texto em botões ou elementos primários
         },
         secondary: {
-          DEFAULT: '#50E3C2',  // Verde suave
+          DEFAULT: '#D3E97A',  // Verde suave
           foreground: '#ffffff',  // Texto em elementos secundários
         },
         muted: {
@@ -40,10 +40,10 @@ export default {
           foreground: '#ffffff',  // Texto em elementos de destaque
         },
         destructive: {
-          DEFAULT: '#D0021B',  // Vermelho de alerta
+          DEFAULT: '#B0C4DE',  // Vermelho de alerta
           foreground: '#ffffff',  // Texto em elementos de alerta
         },
-        border: '#e5e5e5',  // Borda padrão cinza claro
+        border: '#1A1A1A',  // Borda padrão cinza claro
         input: '#ffffff',  // Fundo de input branco
         ring: '#4A90E2',  // Azul claro para foco de elementos
         chart: {

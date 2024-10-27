@@ -1,11 +1,23 @@
+import { Footer } from "./components/footer";
 import { Main } from "./components/main";
 import { Nav } from "./components/nav";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Projects } from "./components/projects";
 function App() {
   return (
-    <>
-      <Nav />
-      <Main />
-    </>
+ <Router>
+      <div className="flex flex-col min-h-screen"> 
+        <Nav />
+        <main className="flex-grow"> 
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Main />} />
+          </Routes>
+        </main>
+        <Footer /> 
+      </div>
+    </Router>
   );
 }
 
