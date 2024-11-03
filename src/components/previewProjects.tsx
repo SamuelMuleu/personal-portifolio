@@ -64,7 +64,7 @@ export function FeaturedProject() {
   ];
 
   return (
-    <div>
+    <div >
       <h2>Meus Repositórios</h2>
 
       <div>

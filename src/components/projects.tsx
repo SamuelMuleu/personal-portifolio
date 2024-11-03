@@ -2,9 +2,9 @@ import {FeaturedProject} from "./previewProjects";
 
 export function Projects() {
   return (
-    <div className="w-[33rem]">
+    <div className="m-0 p-0">
       <div className="font-sans text-3xl mb-5 text-destructive ml-10 mt-10">
-        Projects
+        Projetos
       </div>
       <p className="text-white ml-10 mb-4 w-[22rem] md:w-full">
         Aqui estão alguns dos projetos selecionados que demonstram minha paixão
