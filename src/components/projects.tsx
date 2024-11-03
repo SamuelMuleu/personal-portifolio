@@ -2,7 +2,7 @@ import {FeaturedProject} from "./previewProjects";
 
 export function Projects() {
   return (
-    <div className="m-0 p-0">
+    <div className="">
       <div className="font-sans text-3xl mb-5 text-destructive ml-10 mt-10">
         Projetos
       </div>
