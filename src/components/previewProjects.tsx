@@ -2,8 +2,9 @@ import { ProjectCard } from "./ProjectCard";
 import saffir from "../assets/saffir.png";
 import coffeedelivery from "../assets/coffeedelivery.png";
 import foodDelivery from "../assets/foodDelivery.png";
-import foodMobile from "../assets/foodmobile.png";
 import saffirmobile from "../assets/saffirmobile.png";
+import foodmobile from "../assets/foodmobile.png";
+
 import notes from "../assets/notes.png";
 
 
@@ -20,7 +21,8 @@ export function FeaturedProject() {
       image: saffir,
       image2:saffirmobile,
       site: "saffirjoias",
-      demo: "saffirjoias"
+      demo: "saffirjoias",
+      email:"samuel@email.com",
     },
     {
       
@@ -32,7 +34,8 @@ export function FeaturedProject() {
       image: coffeedelivery,
       image2:coffeedelivery,
       site:"coffeeDelivery",
-    demo:"coffeefastdelivery"
+    demo:"coffeefastdelivery",
+    email:"samuel@email.com",
     },
     {
       
@@ -42,9 +45,10 @@ export function FeaturedProject() {
       year: 2024,
       role: "Desenvolvedor Full-Stack",
       image: foodDelivery,
-      image2:foodMobile,
+      image2:foodmobile,
       site:"food-explorer",
-    demo:"culinaryfood"
+    demo:"culinaryfood",
+    email:"samuel@email.com",
     },
     {
       title: "Site de Notas Pessoais" ,
@@ -54,7 +58,8 @@ export function FeaturedProject() {
       image: notes,
       image2:notes,
       site:"WhatEverNotes",
-    demo:"whatevernotes"
+    demo:"whatevernotes",
+    email:"samuelpereiramuleu@gmail.com",
     },
   ];
 

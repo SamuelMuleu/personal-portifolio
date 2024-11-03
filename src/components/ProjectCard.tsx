@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/table";
 import { Button } from "./ui/button";
 
-import {  Carousel, CarouselContent,CarouselItem } from "./ui/carousel"; 
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import { SiGithub } from "react-icons/si";
 import Autoplay from "embla-carousel-autoplay";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -19,9 +19,10 @@ interface ProjetCardProps {
   year: number;
   role: string;
   image: string;
-  image2?:string;
-  site:string;
-  demo:string;
+  image2?: string;
+  site: string;
+  demo: string;
+  email:string;
 }
 
 export function ProjectCard({
@@ -33,35 +34,35 @@ export function ProjectCard({
   image2,
   site,
   demo,
+  email,
 }: ProjetCardProps) {
   return (
     <div>
       <div className="bg-border md:rounded-xl md:w-[28rem] w-[23rem] m-3 rounded-lg  ">
         <Carousel
-        plugins={[
-          Autoplay({
-            delay: 4000,
-          }),
-        ]}>
-          
-        <CarouselContent>
-          <CarouselItem>
-          <img
-          src={image}
-          alt=""
-          className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 "
-        />
-          </CarouselItem>
-          <CarouselItem>
-          <img
-          src={image2}
-          alt=""
-          className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 "
-        />
+          plugins={[
+            Autoplay({
+              delay: 4000,
+            }),
+          ]}
+        >
+          <CarouselContent>
+            <CarouselItem>
+              <img
+                src={image}
+                alt=""
+                className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 "
+              />
             </CarouselItem>
-        </CarouselContent>
+            <CarouselItem>
+              <img
+                src={image2}
+                alt=""
+                className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 "
+              />
+            </CarouselItem>
+          </CarouselContent>
         </Carousel>
-
       </div>
 
       <div className="flex justify-center items-center mr-28 mt-8  flex-col ">
@@ -88,19 +89,31 @@ export function ProjectCard({
               <TableCell> </TableCell>
               <TableCell className="text-right">{role}</TableCell>
             </TableRow>
+            <TableRow>
+              <TableCell>Login</TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+              <TableCell className="text-right">{email}</TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell>Senha</TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+              <TableCell className="text-right">123</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
         <div className="mb-20 ml-5">
-        <a href={`https://github.com/SamuelMuleu/${site}`}  target="_blank">
+          <a href={`https://github.com/SamuelMuleu/${site}`} target="_blank">
             <Button className=" mt-5 bg-inherit text-secondary border-secondary border-b-4 hover:bg-secondary hover:text-black ">
               Ver no Github <SiGithub />
             </Button>
           </a>
           <a href={`https://${demo}.netlify.app`} target="_blank">
-
-          <Button className=" ml-6 bg-inherit text-secondary border-secondary border-b-4 hover:bg-secondary hover:text-black ">
-            Site Demo <FiArrowUpRight />
-          </Button>
+            <Button className=" ml-6 bg-inherit text-secondary border-secondary border-b-4 hover:bg-secondary hover:text-black ">
+              Site Demo <FiArrowUpRight />
+            </Button>
           </a>
         </div>
       </div>
