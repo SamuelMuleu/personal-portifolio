@@ -90,7 +90,7 @@ export function ProjectCard({
             </TableRow>
           </TableBody>
         </Table>
-        <div className="mb-20">
+        <div className="mb-20 ml-5">
         <a href={`https://github.com/SamuelMuleu/${site}`}  target="_blank">
             <Button className=" mt-5 bg-inherit text-secondary border-secondary border-b-4 hover:bg-secondary hover:text-black ">
               Ver no Github <SiGithub />
