@@ -21,7 +21,7 @@ export function Nav() {
 
 
         <Popover open={isOpen} onOpenChange={setIsOpen}>
-          <PopoverTrigger className="md:hidden">
+          <PopoverTrigger   className="md:hidden">
             <Hamburger toggled={isOpen} toggle={setIsOpen} />
           </PopoverTrigger>
 
@@ -33,6 +33,7 @@ export function Nav() {
             <div className="flex flex-col p-4 gap-4  ">
 
             <Link
+             onClick={() => setIsOpen(false)}
               to="/"
               className="text-gray-500 hover:text-slate-300 "
       
@@ -40,6 +41,7 @@ export function Nav() {
               Sobre Mim
             </Link>
             <Link
+             onClick={() => setIsOpen(false)}
               to="/projects"
               className="text-gray-500 hover:text-slate-300 "
       
@@ -47,6 +49,7 @@ export function Nav() {
               Projetos
             </Link>
             <Link
+             onClick={() => setIsOpen(false)}
               to="/contact"
               className="text-gray-500 hover:text-slate-300 "
          

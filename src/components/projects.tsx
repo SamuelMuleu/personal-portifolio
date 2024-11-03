@@ -1,4 +1,4 @@
-import MyRepos from "./previewProjects";
+import {FeaturedProject} from "./previewProjects";
 
 export function Projects() {
   return (
@@ -6,11 +6,11 @@ export function Projects() {
       <div className="font-sans text-3xl mb-5 text-destructive ml-10 mt-10">
         Projects
       </div>
-      <p className="text-white ml-10 w-64 md:w-full">
+      <p className="text-white ml-10 mb-4 w-[22rem] md:w-full">
         Aqui estão alguns dos projetos selecionados que demonstram minha paixão
         pelo desenvolvimento front-end.
       </p>
-      <MyRepos/>
+      <FeaturedProject/>
     </div>
   );
 }

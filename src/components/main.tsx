@@ -4,6 +4,7 @@ import javascript from "../assets/javascript.svg";
 import html from "../assets/icons8-html.svg";
 import node from "../assets/icons8-nodejs.svg";
 import react from "../assets/react.svg";
+import Autoplay from "embla-carousel-autoplay";
 import typescript from "../assets/icons8-typescript.svg";
 
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
@@ -19,8 +20,12 @@ export function Main() {
   return (
     <div className="text-slate-100 pt-20 p-11 flex flex-col md:flex-row items-center">
       <div className="max-w-[60rem]" id="about">
-        <h1 className="font-sans text-3xl mb-5 text-destructive">Samuel Pereira Muleu</h1>
-        <h2 className="font-sans text-3xl mb-5 text-destructive" >Desenvolvedor Front End</h2>
+        <h1 className="font-sans text-3xl mb-5 text-white">
+          Samuel Pereira Muleu
+        </h1>
+        <h2 className="font-sans text-3xl mb-5 text-destructive">
+          Desenvolvedor Front End
+        </h2>
         <p className="font-sans text-destructive">
           Sou apaixonado por tecnologia e estou no 4° Período de Análise e
           Desenvolvimento de Sistemas. Atualmente, trabalho como Suporte Técnico
@@ -38,32 +43,36 @@ export function Main() {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
 
-        <div className="md:absolute md:mr-[118rem] md:mt-[20rem]">
-          <Carousel className=" w-64 ">
-            <CarouselContent className=" flex items-center  mr-20 mt-5">
+        <div className="md:absolute md:mr-[118rem] md:mt-[15rem]">
+          <p className="font-sans text-3xl mb-5 text-destructive -ml-10 mt-10">
+            Tecnologias
+          </p>
+          <Carousel
+            className=" w-60 "
+            plugins={[
+              Autoplay({
+                delay: 2000,
+              }),
+            ]}
+          >
+            <CarouselContent className=" flex items-center  mr-40 mt-5">
               <CarouselItem>
                 <img src={css} alt="" />
-                css
               </CarouselItem>
               <CarouselItem>
                 <img src={html} alt="" />
-                html
               </CarouselItem>
               <CarouselItem>
                 <img src={javascript} alt="" />
-                Javascript
               </CarouselItem>
               <CarouselItem>
                 <img src={react} alt="" />
-                ReactJs
               </CarouselItem>
               <CarouselItem>
                 <img src={node} alt="" />
-                NodeJs
               </CarouselItem>
               <CarouselItem>
                 <img src={typescript} alt="" />
-                typescript
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
