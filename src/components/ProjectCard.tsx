@@ -22,7 +22,8 @@ interface ProjetCardProps {
   image2?: string;
   site: string;
   demo: string;
-  email:string;
+  email: string;
+  senha:string;
 }
 
 export function ProjectCard({
@@ -35,10 +36,12 @@ export function ProjectCard({
   site,
   demo,
   email,
+  senha,
 }: ProjetCardProps) {
   return (
-    <div>
-      <div className="bg-border md:rounded-xl md:w-[28rem] w-[23rem] m-3 rounded-lg  ">
+    <div className="flex justify-center items-center flex-wrap gap-10">
+ <div className="flex flex-col items-center m-5 p-6 bg-border rounded-xl max-w-[350px] shadow-lg mb-10  ">
+      <div className="w-full"> 
         <Carousel
           plugins={[
             Autoplay({
@@ -47,76 +50,72 @@ export function ProjectCard({
           ]}
         >
           <CarouselContent>
-            <CarouselItem>
+          <CarouselItem>
               <img
                 src={image}
-                alt=""
-                className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 max-w-full "
+                alt={title}
+                className="object-cover w-full h-[12rem] rounded-md"
               />
             </CarouselItem>
-            <CarouselItem>
-              <img
-                src={image2}
-                alt=""
-                className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 max-w-full  "
-              />
-            </CarouselItem>
+            {image2 && (
+              <CarouselItem>
+                <img
+                  src={image2}
+                  alt={`${title} - 2`}
+                  className="object-cover w-full h-[12rem] rounded-md"
+                />
+              </CarouselItem>
+            )}
           </CarouselContent>
         </Carousel>
       </div>
 
-      <div className="flex justify-center items-center mr-28 mt-8  flex-col ">
-        <h2 className="text-white text-2xl w-[22.7rem]  ">{title}</h2>
-        <p className="mt-6 mr-7 w-[21rem]  ">{description}</p>
+      <div className="text-center mt-6">
+        <h2 className="text-white text-2xl font-semibold mb-4">{title}</h2>
+        <p className="text-gray-300 text-sm mb-4">{description}</p>
       </div>
 
-      <div className="mt-12 ml-5 ">
-        <p className="text-xl text-white w-72"> Informações do projeto</p>
+      <div className="w-full mt-6">
+        <p className="text-xl text-white mb-4">Informações do projeto</p>
 
-        <Table className="w-[22rem]">
+        <Table className="w-full">
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[100px]">Ano</TableHead>
-              <TableHead></TableHead>
-              <TableHead></TableHead>
+              <TableHead className="w-1/4">Ano</TableHead>
               <TableHead className="text-right">{year}</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow>
               <TableCell className="font-medium">Função</TableCell>
-              <TableCell></TableCell>
-              <TableCell> </TableCell>
-              <TableCell className="text-right">{role}</TableCell>
+              <TableCell className="text-center">{role}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Login</TableCell>
-              <TableCell></TableCell>
-              <TableCell></TableCell>
-              <TableCell className="text-right">{email}</TableCell>
+              <TableCell className="text-center">{email}</TableCell>
             </TableRow>
-
             <TableRow>
               <TableCell>Senha</TableCell>
-              <TableCell></TableCell>
-              <TableCell></TableCell>
-              <TableCell className="text-right">123</TableCell>
+              <TableCell className="text-center">{senha}</TableCell>
             </TableRow>
           </TableBody>
         </Table>
-        <div className="mb-20 ml-5">
-          <a href={`https://github.com/SamuelMuleu/${site}`} target="_blank">
-            <Button className=" mt-5 bg-inherit text-secondary border-secondary border-b-4 hover:bg-secondary hover:text-black ">
-              Ver no Github <SiGithub />
-            </Button>
-          </a>
-          <a href={`https://${demo}.netlify.app`} target="_blank">
-            <Button className=" ml-6 bg-inherit text-secondary border-secondary border-b-4 hover:bg-secondary hover:text-black ">
-              Site Demo <FiArrowUpRight />
-            </Button>
-          </a>
-        </div>
+      </div>
+
+      <div className="mt-6 flex gap-4">
+        <a href={`https://github.com/SamuelMuleu/${site}`} target="_blank">
+          <Button className="bg-transparent text-secondary border-secondary border-b-4 hover:bg-secondary hover:text-black">
+            Ver no Github <SiGithub />
+          </Button>
+        </a>
+        <a href={`https://${demo}.netlify.app`} target="_blank">
+          <Button className="bg-transparent text-secondary border-secondary border-b-4 hover:bg-secondary hover:text-black">
+            Site Demo <FiArrowUpRight />
+          </Button>
+        </a>
       </div>
     </div>
+    </div>
+   
   );
 }

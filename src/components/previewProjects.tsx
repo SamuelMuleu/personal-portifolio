@@ -22,7 +22,8 @@ export function FeaturedProject() {
       image2:saffirmobile,
       site: "saffirjoias",
       demo: "saffirjoias",
-      email:"samuel@email.com",
+      email:"saffirjoias@gmail.com",
+      senha:'123456',
     },
     {
       
@@ -36,6 +37,7 @@ export function FeaturedProject() {
       site:"coffeeDelivery",
     demo:"coffeefastdelivery",
     email:"samuel@email.com",
+    senha:'123',
     },
     {
       
@@ -49,6 +51,7 @@ export function FeaturedProject() {
       site:"food-explorer",
     demo:"culinaryfood",
     email:"samuel@email.com",
+    senha:'123',
     },
     {
       title: "Site de Notas Pessoais" ,
@@ -60,6 +63,7 @@ export function FeaturedProject() {
       site:"WhatEverNotes",
     demo:"whatevernotes",
     email:"samuelpereiramuleu@gmail.com",
+    senha:'123',
     },
   ];
 
@@ -67,7 +71,7 @@ export function FeaturedProject() {
     <div >
       <h2>Meus Repositórios</h2>
 
-      <div>
+      <div className="">
         {
           projects.map((project, index)=>(
             <ProjectCard
