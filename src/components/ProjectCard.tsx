@@ -51,14 +51,14 @@ export function ProjectCard({
               <img
                 src={image}
                 alt=""
-                className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 "
+                className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 max-w-full "
               />
             </CarouselItem>
             <CarouselItem>
               <img
                 src={image2}
                 alt=""
-                className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 "
+                className=" md:w-[22rem] md:h-[22rem] md:p-5 md:ml-12 h-[20rem] w-[20rem] ml-8  p-4 max-w-full  "
               />
             </CarouselItem>
           </CarouselContent>

@@ -62,5 +62,15 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+}
+@media (max-width:768px) {
+
+  h1{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1rem;
   }
 }
