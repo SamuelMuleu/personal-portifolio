@@ -3,7 +3,7 @@ import {FeaturedProject} from "./previewProjects";
 export function Projects() {
   return (
     <div className="">
-      <div className="font-sans text-3xl mb-5 text-destructive ml-10 mt-10">
+      <div className="text-4xl text-white font-bold md:mt-32 mb-7 ml-10">
         Projetos
       </div>
       <p className="text-white ml-10 mb-4 w-[22rem] md:w-full">

@@ -19,7 +19,6 @@ interface ProjetCardProps {
   year: number;
   role: string;
   image: string;
-  image2?: string;
   site: string;
   demo: string;
   email: string;
@@ -32,7 +31,7 @@ export function ProjectCard({
   year,
   role,
   image,
-  image2,
+
   site,
   demo,
   email,
@@ -54,18 +53,10 @@ export function ProjectCard({
               <img
                 src={image}
                 alt={title}
-                className="object-cover w-full h-[12rem] rounded-md"
+
               />
             </CarouselItem>
-            {image2 && (
-              <CarouselItem>
-                <img
-                  src={image2}
-                  alt={`${title} - 2`}
-                  className="object-cover w-full h-[12rem] rounded-md"
-                />
-              </CarouselItem>
-            )}
+           
           </CarouselContent>
         </Carousel>
       </div>
@@ -78,10 +69,10 @@ export function ProjectCard({
       <div className="w-full mt-6">
         <p className="text-xl text-white mb-4">Informações do projeto</p>
 
-        <Table className="w-full">
+        <Table className="w-full ">
           <TableHeader>
             <TableRow>
-              <TableHead className="w-1/4">Ano</TableHead>
+              <TableHead>Ano</TableHead>
               <TableHead className="text-right">{year}</TableHead>
             </TableRow>
           </TableHeader>

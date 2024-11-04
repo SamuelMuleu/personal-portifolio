@@ -27,7 +27,7 @@ export function Nav() {
 
           {/* Menu Mobile */}
           <PopoverContent
-            className=" h-44 w-36 shadow-md"
+            className=" h-44 w-36 shadow-md mr-3"
             
           >
             <div className="flex flex-col p-4 gap-4  ">
@@ -35,7 +35,7 @@ export function Nav() {
             <Link
              onClick={() => setIsOpen(false)}
               to="/"
-              className="text-gray-500 hover:text-slate-300 "
+              className="text-gray-500 hover:text-slate-300 w-72 "
       
             >
               Sobre Mim
@@ -72,7 +72,7 @@ export function Nav() {
           <Link to="/projects" className="text-gray-500 hover:text-slate-300 cursor-pointer">
             Projetos
           </Link>
-          <Link to="about" className="text-gray-500 hover:text-slate-300 cursor-pointer">
+          <Link to="/contact" className="text-gray-500 hover:text-slate-300 cursor-pointer">
             Contato
           </Link>
         </nav>

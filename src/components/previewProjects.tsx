@@ -2,8 +2,6 @@ import { ProjectCard } from "./ProjectCard";
 import saffir from "../assets/saffir.png";
 import coffeedelivery from "../assets/coffeedelivery.png";
 import foodDelivery from "../assets/foodDelivery.png";
-import saffirmobile from "../assets/saffirmobile.png";
-import foodmobile from "../assets/foodmobile.png";
 
 import notes from "../assets/notes.png";
 
@@ -19,7 +17,7 @@ export function FeaturedProject() {
       year: 2024,
       role: "Desenvolvedor Full-Stack",
       image: saffir,
-      image2:saffirmobile,
+
       site: "saffirjoias",
       demo: "saffirjoias",
       email:"saffirjoias@gmail.com",
@@ -33,7 +31,7 @@ export function FeaturedProject() {
       year: 2024,
       role: "Desenvolvedor Front-end",
       image: coffeedelivery,
-      image2:coffeedelivery,
+  
       site:"coffeeDelivery",
     demo:"coffeefastdelivery",
     email:"samuel@email.com",
@@ -47,7 +45,7 @@ export function FeaturedProject() {
       year: 2024,
       role: "Desenvolvedor Full-Stack",
       image: foodDelivery,
-      image2:foodmobile,
+
       site:"food-explorer",
     demo:"culinaryfood",
     email:"samuel@email.com",
@@ -55,21 +53,21 @@ export function FeaturedProject() {
     },
     {
       title: "Site de Notas Pessoais" ,
-      description: "em-vindo ao repositório do WhateverNotes, um aplicativo web desenvolvido com React e Vite, que permite aos usuários realizar login, cadastrar-se, trocar a foto de perfil, e gerenciar notas vinculadas a links e tags, tudo armazenado em um banco de dados relacional MySQL.",
+      description: "Um aplicativo web desenvolvido com React e Vite, que permite aos usuários realizar login, cadastrar-se, trocar a foto de perfil, e gerenciar notas vinculadas a links e tags, tudo armazenado em um banco de dados relacional MySQL.",
       year: 2024,
       role: "Desenvolvedor Full-Stack",
       image: notes,
-      image2:notes,
+
       site:"WhatEverNotes",
     demo:"whatevernotes",
-    email:"samuelpereiramuleu@gmail.com",
+    email:"samuel@email.com",
     senha:'123',
     },
   ];
 
   return (
     <div >
-      <h2>Meus Repositórios</h2>
+
 
       <div className="">
         {

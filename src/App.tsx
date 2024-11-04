@@ -3,6 +3,7 @@ import { Main } from "./components/main";
 import { Nav } from "./components/nav";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Projects } from "./components/projects";
+import { Contact } from "./components/contact";
 function App() {
   return (
  <Router>
@@ -12,7 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Main />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer /> 
