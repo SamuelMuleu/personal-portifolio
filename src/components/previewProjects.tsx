@@ -69,7 +69,7 @@ export function FeaturedProject() {
     <div >
 
 
-      <div className="">
+      <div className=" md:flex md:flex-col md:justify-center md:items-center md:ml-14">
         {
           projects.map((project, index)=>(
             <ProjectCard

@@ -8,8 +8,8 @@ import Autoplay from "embla-carousel-autoplay";
 import typescript from "../assets/icons8-typescript.svg";
 import tailwind from "../assets/icons8-tailwind-css.svg";
 import vite from "../assets/icons8-vite.svg";
-
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
+import { motion } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -21,7 +21,13 @@ import {
 export function Main() {
   return (
     <div className="text-slate-100 pt-20 p-11 flex flex-col md:grid md:grid-cols-2 md:gap-16 md:mt-16 md:ml-20 items-center">
-      <div className="max-w-[60rem] md:self-start md:ml-10" id="about">
+      <motion.div
+        className="max-w-[60rem] md:self-start md:ml-10"
+        id="about"
+        initial={{ x: -100 }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      >
         <h1 className="text-4xl font-bold mb-5 text-white">
           Olá, Eu sou <br />
           Samuel Pereira Muleu.
@@ -34,15 +40,25 @@ export function Main() {
           Sou apaixonado por tecnologia e estou no 4° Período de Análise e
           Desenvolvimento de Sistemas.
         </p>
+      </motion.div>
 
-      </div>
       <div className="flex flex-col items-center mt-10 md:-mt-10">
-        
-        <Avatar className="md:w-64 md:h-64 w-40 h-40 md:mb-8 ">
-          <AvatarImage src={perfil} />
-          <AvatarFallback>SamuelPereira</AvatarFallback>
-        </Avatar>
-        <div className="md:mr-[44rem] ">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Avatar className="md:w-64 md:h-64 w-40 h-40 md:mb-8 ">
+            <AvatarImage src={perfil} />
+            <AvatarFallback>SamuelPereira</AvatarFallback>
+          </Avatar>
+        </motion.div>
+        <motion.div
+          className="md:mr-[44rem]   "
+          initial={{ opacity: 0, scale: 0.5, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <p className="font-sans text-3xl mb-5 text-destructive -ml-10 mt-10 md:ml-10">
             Tecnologias
           </p>
@@ -84,22 +100,29 @@ export function Main() {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
-        </div>
+        </motion.div>
 
         <div className="w-screen mt-10 md:mt-16 md:mr-[44rem]">
           <div className="border-t-4 w-[23rem] md:w-full  border-gray-700 h-1 mb-5 mx-auto" />
-          <h2 className="text-4xl font-bold text-white text-center mt-7">
-            Sobre Mim
-          </h2>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5, y: 20 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-4xl font-bold text-white text-center mt-7 md:mt-20">
+              Sobre Mim
+            </h2>
 
-          <p className="font-sans mt-7 text-center max-w-lg mx-auto">
-            Estou focado em aprimorar minhas habilidades com tecnologias
-            modernas, especialmente React e TypeScript, para criar interfaces
-            atraentes e funcionais. Com um sólido conhecimento em
-            desenvolvimento web, venho construindo projetos que demonstram minha
-            capacidade de resolver problemas e de oferecer soluções digitais
-            intuitivas.
-          </p>
+            <p className="font-sans mt-7 text-center max-w-lg mx-auto">
+              Estou focado em aprimorar minhas habilidades com tecnologias
+              modernas, especialmente React e TypeScript, para criar interfaces
+              atraentes e funcionais. Com um sólido conhecimento em
+              desenvolvimento web, venho construindo projetos que demonstram
+              minha capacidade de resolver problemas e de oferecer soluções
+              digitais intuitivas.
+            </p>
+          </motion.div>
         </div>
       </div>
     </div>
