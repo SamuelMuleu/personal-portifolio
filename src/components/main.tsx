@@ -26,7 +26,8 @@ export function Main() {
         id="about"
         initial={{ x: -100 }}
         animate={{ x: 0 }}
-        transition={{ type: "spring", stiffness: 300 }}
+        transition={{ duration: 0.9 }}
+  
       >
         <h1 className="text-4xl font-bold mb-5 text-white">
           Olá, Eu sou <br />
@@ -46,7 +47,7 @@ export function Main() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.9 }}
         >
           <Avatar className="md:w-64 md:h-64 w-40 h-40 md:mb-8 ">
             <AvatarImage src={perfil} />
@@ -57,7 +58,7 @@ export function Main() {
           className="md:mr-[44rem]   "
           initial={{ opacity: 0, scale: 0.5, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.9 }}
         >
           <p className="font-sans text-3xl mb-5 text-destructive -ml-10 mt-10 md:ml-10">
             Tecnologias
@@ -108,7 +109,7 @@ export function Main() {
             initial={{ opacity: 0, scale: 0.5, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
           >
             <h2 className="text-4xl font-bold text-white text-center mt-7 md:mt-20">
               Sobre Mim

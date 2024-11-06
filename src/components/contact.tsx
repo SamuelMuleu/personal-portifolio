@@ -68,7 +68,7 @@ export function Contact() {
         className="text-4xl text-white font-bold md:mt-48 md:ml-10 ml-5 mt-20 "
         initial={{ x: -100 }}
         animate={{ x: 0 }}
-        transition={{ type: "spring", stiffness: 300 }}
+        transition={{ duration:0.9 }}
       >
         Vamos Conectar
         <div className="flex gap-5 mt-14 items-center md:ml-20 ml-2">
@@ -99,7 +99,7 @@ export function Contact() {
         className="md:w-[37rem] md:mt-32 mt-10 p-7"
         initial={{ x: 100 }}
         animate={{ x: 0 }}
-        transition={{ type: "spring", stiffness: 300 }}
+        transition={{duration:0.9}}
       >
         <Form {...form}>
           <form className="space-y-8" onSubmit={handleSubmit(sendEmail)}>

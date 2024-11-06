@@ -2,7 +2,7 @@ import { ProjectCard } from "./ProjectCard";
 import saffir from "../assets/saffir.png";
 import coffeedelivery from "../assets/coffeedelivery.png";
 import foodDelivery from "../assets/foodDelivery.png";
-
+import { motion } from "framer-motion";
 import notes from "../assets/notes.png";
 
 
@@ -69,7 +69,11 @@ export function FeaturedProject() {
     <div >
 
 
-      <div className=" md:flex md:flex-col md:justify-center md:items-center md:ml-14">
+      <motion.div className=" md:flex md:flex-col md:justify-center md:items-center md:ml-14"
+           initial={{ opacity: 0, scale: 0.5 }}
+           animate={{ opacity: 1, scale: 1 }}
+           transition={{ duration: 1 }}
+           >
         {
           projects.map((project, index)=>(
             <ProjectCard
@@ -79,7 +83,7 @@ export function FeaturedProject() {
           ))
         }
 
-      </div>
+      </motion.div>
     </div>
   );
 }

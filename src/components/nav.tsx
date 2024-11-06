@@ -1,15 +1,18 @@
 import { useState } from "react";
 import Hamburger from "hamburger-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-  } from "../components/ui/popover";
-  
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "../components/ui/popover";
+
 export function Nav() {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const isActive = (path: string) =>
+    location.pathname === path ? "text-white" : "";
 
   return (
     <header className="w-full p-5">
@@ -18,44 +21,35 @@ export function Nav() {
           Meu Portfólio
         </h1>
 
-
-
         <Popover open={isOpen} onOpenChange={setIsOpen}>
-          <PopoverTrigger   className="md:hidden">
+          <PopoverTrigger className="md:hidden">
             <Hamburger toggled={isOpen} toggle={setIsOpen} />
           </PopoverTrigger>
 
           {/* Menu Mobile */}
-          <PopoverContent
-            className=" h-44 w-36 shadow-md mr-3"
-            
-          >
+          <PopoverContent className=" h-44 w-36 shadow-md mr-3">
             <div className="flex flex-col p-4 gap-4  ">
-
-            <Link
-             onClick={() => setIsOpen(false)}
-              to="/"
-              className="text-gray-500 hover:text-slate-300 w-72 "
-      
-            >
-              Sobre Mim
-            </Link>
-            <Link
-             onClick={() => setIsOpen(false)}
-              to="/projects"
-              className="text-gray-500 hover:text-slate-300 "
-      
-            >
-              Projetos
-            </Link>
-            <Link
-             onClick={() => setIsOpen(false)}
-              to="/contact"
-              className="text-gray-500 hover:text-slate-300 "
-         
-            >
-              Contato
-            </Link>
+              <Link
+                onClick={() => setIsOpen(false)}
+                to="/"
+                className="text-gray-500 hover:text-slate-300 w-72 "
+              >
+                Sobre Mim
+              </Link>
+              <Link
+                onClick={() => setIsOpen(false)}
+                to="/projects"
+                className="text-gray-500 hover:text-slate-300 "
+              >
+                Projetos
+              </Link>
+              <Link
+                onClick={() => setIsOpen(false)}
+                to="/contact"
+                className="text-gray-500 hover:text-slate-300 "
+              >
+                Contato
+              </Link>
             </div>
           </PopoverContent>
         </Popover>
@@ -64,15 +58,30 @@ export function Nav() {
         <nav
           className={`hidden md:flex md:space-x-6 md:pb-1 ${
             isOpen ? "block" : "hidden"
-          }` }
+          }`}
         >
-          <Link to="/" className="text-gray-500 hover:text-slate-300 cursor-pointer" >
+          <Link
+            to="/"
+            className={`text-gray-500 hover:text-slate-300 cursor-pointer ${isActive(
+              "/"
+            )} `}
+          >
             Sobre Mim
           </Link>
-          <Link to="/projects" className="text-gray-500 hover:text-slate-300 cursor-pointer">
+          <Link
+            to="/projects"
+            className={`text-gray-500 hover:text-slate-300 cursor-pointer ${isActive(
+              "/projects"
+            )} `}
+          >
             Projetos
           </Link>
-          <Link to="/contact" className="text-gray-500 hover:text-slate-300 cursor-pointer">
+          <Link
+            to="/contact"
+            className={`text-gray-500 hover:text-slate-300 cursor-pointer ${isActive(
+              "/contact"
+            )} `}
+          >
             Contato
           </Link>
         </nav>
