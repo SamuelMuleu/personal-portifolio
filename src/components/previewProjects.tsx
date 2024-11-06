@@ -3,7 +3,7 @@ import saffir from "../assets/saffir.png";
 import coffeedelivery from "../assets/coffeedelivery.png";
 import foodDelivery from "../assets/foodDelivery.png";
 import { motion } from "framer-motion";
-import notes from "../assets/notes.png";
+import todo from "../assets/todo.png";
 
 
 export function FeaturedProject() {
@@ -52,16 +52,16 @@ export function FeaturedProject() {
     senha:'123',
     },
     {
-      title: "Site de Notas Pessoais" ,
-      description: "Um aplicativo web desenvolvido com React e Vite, que permite aos usuários realizar login, cadastrar-se, trocar a foto de perfil, e gerenciar notas vinculadas a links e tags, tudo armazenado em um banco de dados relacional MySQL.",
+      title: "Site to-do" ,
+      description: "Este é um simples aplicativo de lista de tarefas desenvolvido em React. Ele permite que os usuários criem, gerenciem e marquem suas tarefas como concluídas.",
       year: 2024,
-      role: "Desenvolvedor Full-Stack",
-      image: notes,
+      role: "Desenvolvedor Front-end",
+      image: todo,
 
-      site:"WhatEverNotes",
-    demo:"whatevernotes",
-    email:"samuel@email.com",
-    senha:'123',
+      site:"toDo",
+    demo:"organizelist",
+    email:"não é necessario ",
+    senha:'não é necessario',
     },
   ];
 
