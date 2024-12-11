@@ -1,14 +1,34 @@
 import { ProjectCard } from "./ProjectCard";
 import saffir from "../assets/saffir.png";
+import saffirMobile from "../assets/saffirMobile.png";
 import coffeedelivery from "../assets/coffeedelivery.png";
-import foodDelivery from "../assets/foodDelivery.png";
+import coffeedeliveryMobile from "../assets/cofeeDeliveryMobile.png";
+import popcorn from "../assets/popcornMobile.png";
+import popcornPc from "../assets/popcornPc.png";
 import { motion } from "framer-motion";
 import todo from "../assets/todo.png";
 
+import todoMobile from "../assets/todoMobile.png";
 
 export function FeaturedProject() {
 
   const projects = [
+    
+    {
+      
+      title: "Site para favoritar Filmes e Séries",
+      description:
+        "Este projeto consiste em uma aplicação web que consome dados da API The Movie Database (TMDB). A aplicação inclui um sistema de autenticação e uma funcionalidade para favoritar filmes e séries, ambos implementados usando Firebase. O front-end foi desenvolvido com Next.js e TypeScript,  utilizando Tailwind CSS para estilização, garantindo um design responsivo e de rapida manutenção. ",
+      year: 2024,
+      role: "Desenvolvedor Front-end",
+      image: popcorn,
+      image2: popcornPc,
+
+      site:"popcorn",
+    demo:"popcornview",
+    email:"crie você mesmo",
+    senha:'----',
+    },
     {
       
       title: "Site Para Mostruário e Contato de uma Joalheria e Ourivesaria",
@@ -17,6 +37,7 @@ export function FeaturedProject() {
       year: 2024,
       role: "Desenvolvedor Full-Stack",
       image: saffir,
+      image2: saffirMobile,
 
       site: "saffirjoias",
       demo: "saffirjoias",
@@ -31,32 +52,21 @@ export function FeaturedProject() {
       year: 2024,
       role: "Desenvolvedor Front-end",
       image: coffeedelivery,
+      image2: coffeedeliveryMobile,
   
       site:"coffeeDelivery",
     demo:"coffeefastdelivery",
     email:"samuel@email.com",
     senha:'123',
     },
-    {
-      
-      title: "Site de Cardápio De Restaurante",
-      description:
-        "Este projeto consiste em um sistema de uma aplicação completa que vai desde criação e edição ate a visualização de um prato ,bem como sign-up, sign-in e sign-out  , bem como a versão mobile do projeto . Ele foi desenvolvido para finalização do curso Explorer da Rocketseat.backend feito em NodeJs",
-      year: 2024,
-      role: "Desenvolvedor Full-Stack",
-      image: foodDelivery,
 
-      site:"food-explorer",
-    demo:"culinaryfood",
-    email:"samuel@email.com",
-    senha:'123',
-    },
     {
       title: "Site to-do" ,
       description: "Este é um simples aplicativo de lista de tarefas desenvolvido em React. Ele permite que os usuários criem, gerenciem e marquem suas tarefas como concluídas.",
       year: 2024,
       role: "Desenvolvedor Front-end",
       image: todo,
+      image2: todoMobile,
 
       site:"toDo",
     demo:"organizelist",

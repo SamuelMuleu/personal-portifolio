@@ -8,6 +8,7 @@ import Autoplay from "embla-carousel-autoplay";
 import typescript from "../assets/icons8-typescript.svg";
 import tailwind from "../assets/icons8-tailwind-css.svg";
 import vite from "../assets/icons8-vite.svg";
+import next from "../assets/icons8-nextjs.svg";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 import { motion } from "framer-motion";
 import {
@@ -27,7 +28,6 @@ export function Main() {
         initial={{ x: -100 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.9 }}
-  
       >
         <h1 className="text-4xl font-bold mb-5 text-white">
           Olá, Eu sou <br />
@@ -97,6 +97,9 @@ export function Main() {
               <CarouselItem>
                 <img src={vite} alt="" />
               </CarouselItem>
+              <CarouselItem>
+                <img src={next} alt="" />
+              </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
@@ -113,6 +116,7 @@ export function Main() {
           >
             <h2 className="text-4xl font-bold text-white text-center mt-7 md:mt-20">
               Sobre Mim
+
             </h2>
 
             <p className="font-sans mt-7 text-center max-w-lg mx-auto">
