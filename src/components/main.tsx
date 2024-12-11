@@ -15,8 +15,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+
 } from "../components/ui/carousel";
 
 export function Main() {
@@ -60,7 +59,7 @@ export function Main() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.9 }}
         >
-          <p className="font-sans text-3xl mb-5 text-destructive -ml-10 mt-10 md:ml-10">
+          <p className="font-sans flex items-center justify-center text-3xl mb-5 text-destructive mt-10 md:ml-10">
             Tecnologias
           </p>
 
@@ -72,7 +71,7 @@ export function Main() {
               }),
             ]}
           >
-            <CarouselContent className=" flex items-center mr-40 mt-5">
+            <CarouselContent className="flex items-center mr-40 mt-5">
               <CarouselItem>
                 <img src={css} alt="" />
               </CarouselItem>
@@ -101,22 +100,21 @@ export function Main() {
                 <img src={next} alt="" />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+
           </Carousel>
         </motion.div>
 
-        <div className="w-screen mt-10 md:mt-16 md:mr-[44rem]">
-          <div className="border-t-4 w-[23rem] md:w-full  border-gray-700 h-1 mb-5 mx-auto" />
+        <div className="w-screen mt-10   flex flex-col justify-center   items-center md:mt-16 md:mr-[44rem]">
+          <div className="border-t-4  w-[23rem] md:w-full  border-gray-700 h-1 mb-5 mx-auto" />
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
+            className="w-72 md:w-full flex flex-col justify-center   items-center"
           >
             <h2 className="text-4xl font-bold text-white text-center mt-7 md:mt-20">
               Sobre Mim
-
             </h2>
 
             <p className="font-sans mt-7 text-center max-w-lg mx-auto">

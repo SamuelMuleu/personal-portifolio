@@ -54,12 +54,12 @@ export function ProjectCard({
             <CarouselContent>
               <CarouselItem>
                 <div className="flex items-center justify-center f">
-                  <img className="max-h-72 " src={image} alt={title} />
+                  <img  rel="preload" className="max-h-72 " src={image} alt={title} />
                 </div>
               </CarouselItem>
               <CarouselItem>
                 <div className="flex items-center justify-center f">
-                  <img src={image2} className="max-h-72" alt={title} />
+                  <img  rel="preload" src={image2} className="max-h-72" alt={title} />
                 </div>
               </CarouselItem>
             </CarouselContent>
