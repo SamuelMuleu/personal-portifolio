@@ -1,4 +1,4 @@
-import { FeaturedProject } from "./previewProjects";
+import { FeaturedProject } from "../../components/previewProjects";
 import { motion } from "framer-motion";
 export function Projects() {
   return (

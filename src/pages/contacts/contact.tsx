@@ -2,7 +2,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { SiGithub } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 import {
@@ -12,8 +12,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "./ui/form";
-import { Input } from "./ui/input";
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";

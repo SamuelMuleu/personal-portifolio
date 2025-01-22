@@ -2,8 +2,8 @@ import { Footer } from "./components/footer";
 import { Main } from "./components/main";
 import { Nav } from "./components/nav";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Projects } from "./components/projects";
-import { Contact } from "./components/contact";
+import { Projects } from "./pages/projects/projects";
+import { Contact } from "./pages/contacts/contact";
 function App() {
   return (
  <Router>

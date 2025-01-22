@@ -12,20 +12,8 @@ import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import { SiGithub } from "react-icons/si";
 import Autoplay from "embla-carousel-autoplay";
 import { FiArrowUpRight } from "react-icons/fi";
+import { ProjetCardProps } from "@/assets/projects";
 
-interface ProjetCardProps {
-  title: string;
-
-  description: string;
-  year: number;
-  role: string;
-  image: string;
-  image2: string;
-  site: string;
-  demo: string;
-  email: string;
-  senha: string;
-}
 
 export function ProjectCard({
   title,
@@ -40,10 +28,12 @@ export function ProjectCard({
   email,
   senha,
 }: ProjetCardProps) {
+
+
   return (
-    <div className="flex justify-center items-center flex-wrap gap-10">
-      <div className="flex flex-col items-center m-5 p-6 bg-border rounded-xl max-w-[350px] shadow-lg mb-10  ">
-        <div className="w-full">
+    <div className="flex justify-center items-center  flex-wrap gap-10">
+      <div className="flex flex-col items-center m-5  p-6 bg-border rounded-xl max-w-[350px] shadow-lg mb-10  ">
+        <div className="w-full ">
           <Carousel
             plugins={[
               Autoplay({
@@ -53,7 +43,7 @@ export function ProjectCard({
           >
             <CarouselContent>
               <CarouselItem>
-                <div className="flex items-center justify-center f">
+                <div className="flex  items-center justify-center f">
                   <img  rel="preload" className="max-h-72 " src={image} alt={title} />
                 </div>
               </CarouselItem>
@@ -111,6 +101,7 @@ export function ProjectCard({
           </a>
         </div>
       </div>
+
     </div>
   );
 }
