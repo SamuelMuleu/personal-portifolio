@@ -28,7 +28,7 @@ export function ProjectCard({
 }: ProjetCardProps) {
   return (
     <div className="flex justify-center ">
-      <div className="flex flex-col items-center h-[50rem] p-6 bg-border rounded-xl max-w-[350px] sm:max-w-[90%] lg:max-w-[350px] shadow-lg mb-10  ">
+      <div className="flex flex-col items-center h-[58rem] lg:h-[50rem] p-6 bg-border rounded-xl max-w-[350px] sm:max-w-[90%] lg:max-w-[350px] shadow-lg mb-10  ">
         <div className="w-full mb-4">
           <Carousel
             plugins={[
