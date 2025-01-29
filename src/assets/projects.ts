@@ -30,7 +30,7 @@ export const projects =
     {
         title: "Site para Visualização Climática",
         description:
-          "Este projeto consiste em uma aplicação web desenvolvida para exibir a previsão do tempo em tempo real, utilizando a API OpenWeatherMap para consumo de dados. As requisições são realizadas com Axios, enquanto o controle de estado é gerenciado com Redux.A aplicação permite que os usuários consultem informações detalhadas sobre a previsão do tempo em diferentes localidades, incluindo temperatura, condições climáticas e um resumo semanal.O front-end foi desenvolvido com React.js e TypeScript, utilizando Tailwind CSS para estilização, garantindo um design responsivo, moderno e de fácil manutenção.",
+          "Este projeto consiste em uma aplicação web desenvolvida para exibir a previsão do tempo em tempo real, utilizando a API OpenWeatherMap para consumo de dados. A aplicação permite que os usuários consultem informações detalhadas sobre a previsão do tempo em diferentes localidades.O front-end foi desenvolvido com React.js e TypeScript.",
         year: 2025,
         role: "Desenvolvedor Front-end",
         image: weatherMobile,
@@ -56,7 +56,7 @@ export const projects =
             senha: "----",
         },
         {
-            title: "Site Para Mostruário e Contato de uma Joalheria e Ourivesaria",
+            title: "Site Para Mostruário de Joalheria e Ourivesaria",
             description:
                 "Site feito para uma joalheria para fim de mostruário de joias em geral. Feito com React e TypeScript e Firebase para Back-end",
             year: 2024,
@@ -87,9 +87,9 @@ export const projects =
         {
             title: "Site to-do",
             description:
-                "Este é um simples aplicativo de lista de tarefas desenvolvido em React. Ele permite que os usuários criem, gerenciem e marquem suas tarefas como concluídas.",
+                "Este é um aplicativo de lista de tarefas desenvolvido com React para o front-end e Node.js, Express e MongoDB para o backend. O aplicativo permite que os usuários criem, deletem e marquem suas tarefas como concluídas, com dados persistidos no MongoDB.",
             year: 2024,
-            role: "Desenvolvedor Front-end",
+            role: "Desenvolvedor Full-stack",
             image: todo,
             image2: todoMobile,
 

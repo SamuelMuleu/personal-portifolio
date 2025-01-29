@@ -15,7 +15,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-
 } from "../components/ui/carousel";
 
 export function Main() {
@@ -29,10 +28,10 @@ export function Main() {
         transition={{ duration: 0.9 }}
       >
         <h1 className="text-4xl font-bold mb-5 text-white">
-          Olá, Eu sou <br />
-          Samuel Pereira Muleu.
+          Olá,
+          <br /> Eu sou Samuel Pereira Muleu.
         </h1>
-        <h2 className="font-sans text-3xl mb-5 text-destructive">
+        <h2 className="font-sans lg:text-3xl mb-5 text-2xl text-destructive">
           Desenvolvedor Front End
         </h2>
 
@@ -100,7 +99,6 @@ export function Main() {
                 <img src={next} alt="" />
               </CarouselItem>
             </CarouselContent>
-
           </Carousel>
         </motion.div>
 

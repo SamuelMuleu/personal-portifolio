@@ -4,8 +4,8 @@ export function Footer() {
   return (
     <div className="h-max">
       <div className="  mt-32 border-t-4 border-gray-700 h-7" />
-      <div className=" text-lg flex gap-4 justify-center items-center text-destructive">
-        <p>2024 Samuel Muleu </p>
+      <div className=" text-lg flex gap-4 mb-4 justify-center items-center text-destructive">
+        <p >2024 Samuel Muleu </p>
         <a href="https://github.com/SamuelMuleu" target="_blank">
           <SiGithub className="cursor-pointer text-secondary" />
         </a>

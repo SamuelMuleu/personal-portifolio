@@ -1,22 +1,36 @@
 import { projects } from "@/assets/projects";
 import { ProjectCard } from "./projectCard";
 import { motion } from "framer-motion";
-
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
 
 export function FeaturedProject() {
-
-
   return (
-    <div>
+    <div className="flex justify-center">
       <motion.div
-        className=" md:flex md:flex-col md:justify-center md:items-center md:ml-14"
+        className="w-full max-w-5xl"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
+        <Carousel>
+          <CarouselContent className="-ml-4 flex gap-3 w-full">
+            {projects.map((project, index) => (
+              <CarouselItem key={index} className="w-full sm:basis-1/2  md:basis-1/3">
+                <ProjectCard {...project} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="relative  bottom-[30rem] md:bottom-[35rem] flex justify-between px-4">
+            <CarouselPrevious className="bg-border text-secondary hover:bg-secondary hover:text-black relative left-0 lg:-left-20" />
+            <CarouselNext className="bg-border text-secondary  hover:bg-secondary hover:text-black  relative left-0  lg:left-20" />
+          </div>
+        </Carousel>
       </motion.div>
     </div>
   );

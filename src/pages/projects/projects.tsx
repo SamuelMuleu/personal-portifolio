@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export function Projects() {
   return (
     <div className="">
-      <div className="text-4xl text-white font-bold md:mt-32 mb-7 ml-10 md:ml-72">
+      <div className="text-4xl text-white font-bold md:mt-14 mb-7 ml-10 md:ml-72">
         Projetos
       </div>
       <motion.p
@@ -12,8 +12,8 @@ export function Projects() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        Aqui estão alguns dos projetos selecionados que demonstram minha paixão
-        pelo desenvolvimento front-end.
+        Aqui estão alguns dos Projetos que demonstram minha paixão
+        pelo desenvolvimento.
       </motion.p>
       <FeaturedProject />
     </div>
