@@ -104,7 +104,7 @@ export function Main() {
 
         <div className="w-screen mt-10   flex flex-col justify-center   items-center md:mt-16 md:mr-[44rem]">
           <div />
-          <div className="border-t-4   min-w-[74rem] md:w-full  border-gray-700 "></div>
+          <div className="border-t-4   min-w-full  lg:min-w-[74rem] md:w-full  border-gray-700 "></div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
