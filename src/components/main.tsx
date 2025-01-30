@@ -31,7 +31,7 @@ export function Main() {
           Olá,
           <br /> Eu sou Samuel Pereira Muleu.
         </h1>
-        <h2 className="font-sans lg:text-3xl mb-5 text-2xl text-destructive">
+        <h2 className="font-sans lg:text-2xl mb-5 text-2xl text-destructive">
           Desenvolvedor Front End
         </h2>
 
@@ -103,7 +103,8 @@ export function Main() {
         </motion.div>
 
         <div className="w-screen mt-10   flex flex-col justify-center   items-center md:mt-16 md:mr-[44rem]">
-          <div className="border-t-4  w-[23rem] md:w-full  border-gray-700 h-1 mb-5 mx-auto" />
+          <div />
+          <div className="border-t-4   min-w-[74rem] md:w-full  border-gray-700 "></div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -111,7 +112,7 @@ export function Main() {
             transition={{ duration: 0.7 }}
             className="w-72 md:w-full flex flex-col justify-center   items-center"
           >
-            <h2 className="text-4xl font-bold text-white text-center mt-7 md:mt-20">
+            <h2 className="text-4xl font-bold  text-white text-center mt-7 md:mt-20">
               Sobre Mim
             </h2>
 

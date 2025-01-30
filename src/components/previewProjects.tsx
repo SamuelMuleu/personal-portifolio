@@ -21,14 +21,14 @@ export function FeaturedProject() {
         <Carousel>
           <CarouselContent className="-ml-4 flex gap-3 w-full">
             {projects.map((project, index) => (
-              <CarouselItem key={index} className="w-full sm:basis-1/2  md:basis-1/2">
+              <CarouselItem key={index} className="w-full  basis-1/2">
                 <ProjectCard {...project} />
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="relative  bottom-[30rem] md:bottom-[35rem] flex justify-between px-4">
-            <CarouselPrevious className="bg-border text-secondary hover:bg-secondary hover:text-black relative left-0 lg:-left-20" />
-            <CarouselNext className="bg-border text-secondary  hover:bg-secondary hover:text-black  relative left-0  lg:left-20" />
+          <div className="relative  bottom-[30rem]  md:bottom-[35rem] flex justify-between px-4">
+            <CarouselPrevious className="bg-border text-secondary hover:bg-secondary hover:text-black relative left-0 lg:-left-1" />
+            <CarouselNext className="bg-border text-secondary  hover:bg-secondary hover:text-black  relative left-0  lg:left-1" />
           </div>
         </Carousel>
       </motion.div>
