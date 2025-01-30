@@ -21,7 +21,7 @@ export function FeaturedProject() {
         <Carousel>
           <CarouselContent className="-ml-4 flex gap-3 w-full">
             {projects.map((project, index) => (
-              <CarouselItem key={index} className="w-full sm:basis-1/2  md:basis-1/3">
+              <CarouselItem key={index} className="w-full sm:basis-1/2  md:basis-1/2">
                 <ProjectCard {...project} />
               </CarouselItem>
             ))}
