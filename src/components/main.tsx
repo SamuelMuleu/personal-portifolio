@@ -21,7 +21,7 @@ export function Main() {
   return (
     <div className="text-slate-100 pt-20 p-11 flex flex-col md:grid md:grid-cols-2 md:gap-16 md:mt-16 md:ml-20 items-center">
       <motion.div
-        className="max-w-[60rem] md:self-start md:ml-10"
+        className="max-w-[60rem] md:self-start "
         id="about"
         initial={{ x: -100 }}
         animate={{ x: 0 }}
@@ -36,7 +36,7 @@ export function Main() {
         </h2>
 
         <p className="font-sans text-destructive">
-          Sou apaixonado por tecnologia e estou no 4° Período de Análise e
+          Sou apaixonado por tecnologia e estou no último Período de Análise e
           Desenvolvimento de Sistemas.
         </p>
       </motion.div>
@@ -53,12 +53,12 @@ export function Main() {
           </Avatar>
         </motion.div>
         <motion.div
-          className="flex flex-col items-center w-full mr-[46rem]" //
+          className="flex flex-col items-center w-full mr-[46rem]   md:mr-[30rem]  lg:mr-[44rem]" //
           initial={{ opacity: 0, scale: 0.5, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.9 }}
         >
-          <p className="font-sans flex items-center justify-center text-3xl mb-5 text-destructive mt-10 md:ml-10">
+          <p className="font-sans flex items-center justify-center text-3xl mb-5 text-destructive mt-10 md:mt-52  md:ml-10">
             Tecnologias
           </p>
 
@@ -103,7 +103,7 @@ export function Main() {
           </Carousel>
         </motion.div>
 
-        <div className="w-full  border-t-4 border-gray-700   flex flex-col justify-center   items-center md:mt-16 md:mr-[44rem]">
+        <div className="w-full  border-t-4 border-gray-700   flex flex-col justify-center   items-center md:mt-16  md:mr-[28rem]  lg:mr-[44rem]">
     
         <div className=""></div>
           <motion.div
