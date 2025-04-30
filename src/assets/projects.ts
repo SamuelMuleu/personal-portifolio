@@ -20,6 +20,7 @@ export interface ProjetCardProps {
     image2: string;
     site: string;
     demo: string;
+    platform?:string;
     email: string;
     senha: string;
   }
@@ -56,18 +57,19 @@ export const projects =
             senha: "----",
         },
         {
-            title: "Site Para Mostruário de Joalheria e Ourivesaria",
+            title: "Site Para Portfólio de uma Joalheria",
             description:
-                "Site feito para uma joalheria para fim de mostruário de joias em geral. Feito com React e TypeScript e Firebase para Back-end",
+                "Site feito para uma joalheria para ser um portfólio de joias. Feito com React e TypeScript e Firebase para Back-end",
             year: 2024,
             role: "Desenvolvedor Full-Stack",
             image: saffir,
             image2: saffirMobile,
 
-            site: "saffirjoias",
-            demo: "saffirjoias",
-            email: "saffirjoias@gmail.com",
-            senha: "123456",
+            site: "portfolioSaffir",
+            demo: "portfolio-saffir",
+            platform: "vercel",
+            email: "saffir@joias.com",
+            senha: "190225",
         },
         {
             title: "Site de Entrega de Café: Da Seleção ao Pedido Confirmado",

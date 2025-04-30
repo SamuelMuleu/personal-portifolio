@@ -22,6 +22,7 @@ export function ProjectCard({
   image,
   image2,
   site,
+  platform,
   demo,
   email,
   senha,
@@ -70,7 +71,9 @@ export function ProjectCard({
         </div>
 
         <div className="w-full mt-4">
-          <p className="text-xl sm:text-lg text-white mb-4">Informações do projeto</p>
+          <p className="text-xl sm:text-lg text-white mb-4">
+            Informações do projeto
+          </p>
 
           <Table className="w-full">
             <TableHeader>
@@ -107,7 +110,9 @@ export function ProjectCard({
             </Button>
           </a>
           <a
-            href={`https://${demo}.netlify.app`}
+            href={`https://${demo}.${
+              platform === "vercel" ? "vercel.app" : "netlify.app"
+            }`}
             target="_blank"
             className="w-full sm:w-auto"
           >

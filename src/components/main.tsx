@@ -53,7 +53,7 @@ export function Main() {
           </Avatar>
         </motion.div>
         <motion.div
-          className="md:mr-[44rem]   "
+          className="flex flex-col items-center w-full mr-[46rem]" //
           initial={{ opacity: 0, scale: 0.5, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.9 }}
@@ -63,7 +63,8 @@ export function Main() {
           </p>
 
           <Carousel
-            className=" w-60 "
+            className="w-60"
+      
             plugins={[
               Autoplay({
                 delay: 2000,
@@ -102,9 +103,9 @@ export function Main() {
           </Carousel>
         </motion.div>
 
-        <div className="w-screen mt-10   flex flex-col justify-center   items-center md:mt-16 md:mr-[44rem]">
-          <div />
-          <div className="border-t-4   min-w-full  lg:min-w-[74rem] md:w-full  border-gray-700 "></div>
+        <div className="w-full  border-t-4 border-gray-700   flex flex-col justify-center   items-center md:mt-16 md:mr-[44rem]">
+    
+        <div className=""></div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
