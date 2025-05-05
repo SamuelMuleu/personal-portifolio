@@ -14,6 +14,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { ProjetCardProps } from "@/assets/projects";
 import Autoplay from "embla-carousel-autoplay";
 
+
+
 export function ProjectCard({
   title,
   description,
@@ -68,6 +70,7 @@ export function ProjectCard({
             {title}
           </h2>
           <p className="text-gray-300 text-sm sm:text-xs mb-4">{description}</p>
+
         </div>
 
         <div className="w-full mt-4">

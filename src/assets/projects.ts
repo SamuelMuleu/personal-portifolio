@@ -9,25 +9,43 @@ import todo from "../assets/todo.png";
 import todoMobile from "../assets/todoMobile.png";
 import weather from "../assets/weather.png";
 import weatherMobile from "../assets/weatherMobile.png";
+import calculatorMobile from "../assets/calculatorMobile.png";
+import calculatorPc from "../assets/calculatorPc.png";
+calculatorPc
 
 export interface ProjetCardProps {
     title: string;
-  
     description: string;
     year: number;
     role: string;
     image: string;
     image2: string;
     site: string;
-    demo: string;
     platform?:string;
+    demo: string;
     email: string;
     senha: string;
+    tags: string[]; 
   }
+  
 export const projects =
 
 [
 
+    {
+        title: "Calculadora de Pesos Para Alianças",
+        description:"Aplicação desenvolvida para otimizar o processo de fundição de alianças. O usuário informa variáveis como circunferência interna, altura e largura, e a aplicação calcula automaticamente a conquila ideal e o peso sugerido para a fundição.",
+        year: 2025,
+        role: "Desenvolvedor Front-end",
+        image: calculatorMobile,
+        image2: calculatorPc,
+        platform: "vercel",
+        site: "AllianceCalculator",
+        demo: "alliance-calculator",
+        email: "----",
+        senha: "----",
+        tags: ["React", "TypeScript"]
+    },
     {
         title: "Site para Visualização Climática",
         description:
@@ -41,6 +59,7 @@ export const projects =
         demo: "myweathercities",
         email: "----",
         senha: "----",
+        tags: ["React", "TypeScript"]
     },
         {
             title: "Site para favoritar Filmes e Séries",
@@ -55,6 +74,7 @@ export const projects =
             demo: "popcornview",
             email: "crie você mesmo",
             senha: "----",
+            tags: ["React", "TypeScript"]
         },
         {
             title: "Site Para Portfólio de uma Joalheria",
@@ -70,6 +90,7 @@ export const projects =
             platform: "vercel",
             email: "saffir@joias.com",
             senha: "190225",
+            tags: ["React", "TypeScript"]
         },
         {
             title: "Site de Entrega de Café: Da Seleção ao Pedido Confirmado",
@@ -84,6 +105,7 @@ export const projects =
             demo: "coffeefastdelivery",
             email: "samuel@email.com",
             senha: "123",
+            tags: ["React", "TypeScript"]
         },
 
         {
@@ -99,5 +121,6 @@ export const projects =
             demo: "organizelist",
             email: "não é necessario ",
             senha: "não é necessario",
+            tags: ["React", "TypeScript"]
         },
     ]
