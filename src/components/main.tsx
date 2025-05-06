@@ -103,9 +103,9 @@ export function Main() {
           </Carousel>
         </motion.div>
 
-        <div className="w-full  border-t-4 border-gray-700   flex flex-col justify-center   items-center md:mt-16  md:mr-[28rem]  lg:mr-[44rem]">
+        <div className="w-full sm:w-80 border-t-4 border-gray-700   flex flex-col justify-center   items-center md:mt-16  md:mr-[28rem]  lg:mr-[44rem]">
     
-        <div className=""></div>
+        
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
